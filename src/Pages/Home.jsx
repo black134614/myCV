@@ -44,7 +44,7 @@ export default function Home(props) {
                     <div className="col-lg-6">
                       <ul>
                         <li><i className="bi bi-chevron-right" /> <strong>Ngày sinh:</strong> <span>06-06-1997</span></li>
-                        <li><i className="bi bi-chevron-right" /> <strong>Github:</strong> <span><a href='https://github.com/black134614'>black134614</a></span></li>
+                        <li><i className="bi bi-chevron-right" /> <strong>Github:</strong> <span><a target='_blank' href='https://github.com/black134614'>black134614</a></span></li>
                         <li><i className="bi bi-chevron-right" /> <strong>Số điện thoại:</strong><a href='tel:+84354624774'><span>035.462.4774</span></a></li>
                         <li><i className="bi bi-chevron-right" /> <strong>Nơi ở:</strong> <span>Bình Chuẩn, Bình Dương</span></li>
                       </ul>
@@ -167,8 +167,8 @@ export default function Home(props) {
                     <div class="card-body">
                       <h5 class="card-title">Massive Home Template</h5>
                       <p class="card-text">Cover trang chủ Massive template bằng SASS</p>
-                      <a href="http://massivehome-naul.surge.sh/" class="btn btn-danger me-3">Xem</a>
-                      <a href="https://github.com/black134614/MassiveHome_SASS_BS5" class="btn btn-warning">Soure code</a>
+                      <a target='_blank' href="http://massivehome-naul.surge.sh/" class="btn btn-danger me-3">Xem</a>
+                      <a target='_blank' href="https://github.com/black134614/MassiveHome_SASS_BS5" class="btn btn-warning">Soure code</a>
                     </div>
                   </div>
                 </div>
@@ -180,8 +180,8 @@ export default function Home(props) {
                     <div class="card-body">
                       <h5 class="card-title">Landing Page giới thiệu phòng khám</h5>
                       <p class="card-text">Làm trang lannding page giới thiệu phòng khám cho bạn bè.</p>
-                      <a href="https://black134614.github.io/TamAnhDemo.github.io" class="btn btn-danger me-3">Xem</a>
-                      <a href="https://github.com/black134614/TamAnhDemo.github.io" class="btn btn-warning">Soure code</a>
+                      <a target='_blank' href="https://black134614.github.io/TamAnhDemo.github.io" class="btn btn-danger me-3">Xem</a>
+                      <a target='_blank' href="https://github.com/black134614/TamAnhDemo.github.io" class="btn btn-warning">Soure code</a>
                     </div>
                   </div>
                 </div>
@@ -193,8 +193,8 @@ export default function Home(props) {
                     <div class="card-body">
                       <h5 class="card-title">Máy tính đơn giản</h5>
                       <p class="card-text">App cover máy tính đơn giản để ôn học cơ bản reactjs, sử dụng class conponent.</p>
-                      <a href="https://simple-caculator-naul.surge.sh/" class="btn btn-danger me-3">Xem</a>
-                      <a href="https://github.com/black134614/Reactjs_Khoa1_Caculator" class="btn btn-warning">Soure code</a>
+                      <a target='_blank' href="https://simple-caculator-naul.surge.sh/" class="btn btn-danger me-3">Xem</a>
+                      <a target='_blank' href="https://github.com/black134614/Reactjs_Khoa1_Caculator" class="btn btn-warning">Soure code</a>
                     </div>
                   </div>
                 </div>
@@ -206,8 +206,8 @@ export default function Home(props) {
                     <div class="card-body">
                       <h5 class="card-title">App đặt burger đơn giản</h5>
                       <p class="card-text">Xây dựng app đặt burger đơn giản học chia components, sử dụng class conponent.</p>
-                      <a href="https://simple-burger-oder-naul.surge.sh/" class="btn btn-danger me-3">Xem</a>
-                      <a href="https://github.com/black134614/Reactjs_Khoa2_Components_Burgur-Order-App" class="btn btn-warning">Soure code</a>
+                      <a target='_blank' href="https://simple-burger-oder-naul.surge.sh/" class="btn btn-danger me-3">Xem</a>
+                      <a target='_blank' href="https://github.com/black134614/Reactjs_Khoa2_Components_Burgur-Order-App" class="btn btn-warning">Soure code</a>
                     </div>
                   </div>
                 </div>
@@ -219,8 +219,8 @@ export default function Home(props) {
                     <div class="card-body">
                       <h5 class="card-title">Trang quản lý người dùng đơn giản</h5>
                       <p class="card-text">Xây dựng trang quản lý người dùng đơn giản để ôn tập về life cycle sử dụng class conponent.</p>
-                      <a href="https://simple-users-manage-naul.surge.sh/" class="btn btn-danger me-3">Xem</a>
-                      <a href="https://github.com/black134614/Reactjs_Khoa3_LifeCycle_Quan-Ly-Nguoi-Dung" class="btn btn-warning">Soure code</a>
+                      <a target='_blank' href="https://simple-users-manage-naul.surge.sh/" class="btn btn-danger me-3">Xem</a>
+                      <a target='_blank' href="https://github.com/black134614/Reactjs_Khoa3_LifeCycle_Quan-Ly-Nguoi-Dung" class="btn btn-warning">Soure code</a>
                     </div>
                   </div>
                 </div>
@@ -232,8 +232,8 @@ export default function Home(props) {
                     <div class="card-body">
                       <h5 class="card-title">Phòng thử đồ đơn giản</h5>
                       <p class="card-text">Xây dựng chức năng phòng thử đồ đơn giản để ôn tập life cycle và hook, sử dụng funtional components và thư viện spring animation</p>
-                      <a href="https://simple-dressing-room-naul.surge.sh/" class="btn btn-danger me-3">Xem</a>
-                      <a href="https://github.com/black134614/Reactjs_Khoa3_Hook-Spring-Animation_Dressing-Room" class="btn btn-warning">Soure code</a>
+                      <a target='_blank' href="https://simple-dressing-room-naul.surge.sh/" class="btn btn-danger me-3">Xem</a>
+                      <a target='_blank' href="https://github.com/black134614/Reactjs_Khoa3_Hook-Spring-Animation_Dressing-Room" class="btn btn-warning">Soure code</a>
                     </div>
                   </div>
                 </div>
@@ -246,8 +246,8 @@ export default function Home(props) {
                       <h5 class="card-title">Trang quản lý task</h5>
                       <p class="card-text">Build từ jira để xây dựng trang quản lý task.Dữ liệu lấy từ API cung cấp từ trung tâm. Sử dụng funtional components, thư viện redux, redux saga, ant design,...
                         Task tự thực hiện: bình luận, đăng kí, chỉnh sửa và quản lý thông tin người dùng.</p>
-                      <a href="https://jiraclone-task-manage-naul.surge.sh/" class="btn btn-danger me-3">Xem</a>
-                      <a href="https://github.com/black134614/Reactjs_Khoa4_Jira-Clone_Task-User-Manage_Comments" class="btn btn-waring">Soure code</a>
+                      <a target='_blank' href="https://jiraclone-task-manage-naul.surge.sh/" class="btn btn-danger me-3">Xem</a>
+                      <a target='_blank' href="https://github.com/black134614/Reactjs_Khoa4_Jira-Clone_Task-User-Manage_Comments" class="btn btn-warning">Soure code</a>
                     </div>
                   </div>
                 </div>
@@ -260,8 +260,8 @@ export default function Home(props) {
                       <h5 class="card-title">Trang đặt vé xem phim</h5>
                       <p class="card-text">Xây dựng trang đặt vé xem phim. Dữ liệu lấy từ API cung cấp từ trung tâm.
                         Task tự thực hiện: Đăng kí, trang người dùng, lịch sử đặt vé, trang quản lý người dùng bao gồm: thêm, sửa , xóa người dùng...</p>
-                      <a href="https://movieticket-naul.surge.sh/" class="btn btn-danger me-3">Xem</a>
-                      <a href="https://github.com/black134614/React_Khoa5_MovieTicket" class="btn btn-warning">Soure code</a>
+                      <a target='_blank' href="https://movieticket-naul.surge.sh/" class="btn btn-danger me-3">Xem</a>
+                      <a target='_blank' href="https://github.com/black134614/React_Khoa5_MovieTicket" class="btn btn-warning">Soure code</a>
                     </div>
                   </div>
                 </div>
@@ -282,7 +282,7 @@ export default function Home(props) {
                           <li>Dữ liệu trong database là demo nên mình xin public được.</li>
                         </ul>
                       </p>
-                      <a href="https://github.com/black134614/OanhVinhWebFull" class="btn btn-warning">Soure code</a>
+                      <a target='_blank' href="https://github.com/black134614/OanhVinhWebFull" class="btn btn-warning">Soure code</a>
                     </div>
                   </div>
                 </div>

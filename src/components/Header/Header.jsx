@@ -17,7 +17,7 @@ export default function Header() {
                         <img src={avatar} alt className="img-fluid rounded-circle" />
                         <h1 className="text-light"><a href="index.html">Võ Minh Luân</a></h1>
                         <div className="social-links mt-3 text-center">
-                            <a href="https://www.facebook.com/ov.naul.1" className="facebook"><i className="bx bxl-facebook" /></a>
+                            <a target='_blank' href="https://www.facebook.com/ov.naul.1" className="facebook"><i className="bx bxl-facebook" /></a>
                         </div>
                     </div>
                     <nav id="navbar" className="nav-menu navbar">
