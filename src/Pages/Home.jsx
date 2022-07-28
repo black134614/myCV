@@ -9,7 +9,7 @@ export default function Home(props) {
   useEffect(() => {
     setTimeout(() => {
       dispatch(hideLoadding());
-    }, 1000);
+    }, 3000);
   }, []);
   return (
       <div data-bs-spy="scroll" data-bs-target="#header" data-bs-offset="0" className="scrollspy-example" tabindex="0">
@@ -35,7 +35,7 @@ export default function Home(props) {
               </div>
               <div className="row">
                 <div className="col-lg-4" data-aos="fade-right">
-                  <img src={avatar} className="img-fluid" alt />
+                  <img src={avatar} loading='lazy' className="img-fluid" alt />
                 </div>
                 <div className="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
                   <h3>Designer &amp; Web Developer.</h3>
@@ -81,10 +81,10 @@ export default function Home(props) {
                       Nâng cao
                       <ul>
                         <li>
-                          Framework: Reactjs
+                          Main Gallery: Reactjs
                         </li>
                         <li>
-                          Gallery: Redux, Redux-toolkit, Redux thunk, Redux saga, Axios, React router dom, Ant design, Tailwind,...
+                          Support Gallery: Redux, Redux-toolkit, Redux thunk, Redux saga, Axios, React router dom, Ant design, Tailwind,...
                         </li>
                       </ul>
                     </li>
@@ -319,7 +319,7 @@ export default function Home(props) {
                   </div>
                 </div>
                 <div className="d-none d-lg-block col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
-                 <img src="https://picsum.photos/500/600"/>
+                 <img src="https://picsum.photos/1000/600"/>
                 </div>
               </div>
             </div>
