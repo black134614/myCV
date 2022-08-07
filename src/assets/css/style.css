@@ -952,3 +952,9 @@ section {
     padding-right: 20px 15px;
   }
 }
+
+@media (max-width: 575.98px) {
+  #hero{
+    height: auto!important;
+  }
+}
