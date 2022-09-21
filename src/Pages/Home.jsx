@@ -3,6 +3,16 @@ import { useDispatch } from 'react-redux';
 import { hideLoadding } from '../redux/LoaddingReducer/LoaddingReducer';
 import HeroHome from '../components/HeroHome/HeroHome'
 import avatar from '../assets/img/luan.jpg'
+import h1 from '../assets/img/demos/h1-min.png'
+import h2 from '../assets/img/demos/h2-min.png'
+import h3 from '../assets/img/demos/h3-min.png'
+import h4 from '../assets/img/demos/h4-min.png'
+import h5 from '../assets/img/demos/h5-min.png'
+import h6 from '../assets/img/demos/h6-min.png'
+import h7 from '../assets/img/demos/h7-min.png'
+import h8 from '../assets/img/demos/h8-min.png'
+import h9 from '../assets/img/demos/h9-min.png'
+
 export default function Home(props) {
   const dispatch = useDispatch();
 
@@ -146,7 +156,7 @@ export default function Home(props) {
             <div className="container">
               <div className="section-title">
                 <h2>Kinh nghiệm cá nhân</h2>
-                <p>Trước 2020 mình rất ít dùng github nên đa phần sẽ là kinh nghiệm học ở Cybersoft.</p>
+                <p>Bên dưới là những kinh nghiệm nho nhỏ của mình.</p>
               </div>
               <div className="row" data-aos="fade-up">
                 <div className="col-lg-12 d-flex justify-content-center">
@@ -161,10 +171,8 @@ export default function Home(props) {
               <div className="row portfolio-container" data-aos="fade-up" data-aos-delay={100}>
                 <div className="col-lg-4 col-md-6 portfolio-item filter-template">
                   <div class="card portfolio-wrap bg-primary text-light">
-                    <div class="card-header">
-                      SASS
-                    </div>
-                    <div class="card-body">
+                    <img src={h1} className="card-img" alt="h1" />
+                    <div class="card-body card-img-overlay">
                       <h5 class="card-title">Massive Home Template</h5>
                       <p class="card-text">Cover trang chủ Massive template bằng SASS</p>
                       <a target='_blank' href="http://massivehome-naul.surge.sh/" class="btn btn-danger me-3">Xem</a>
@@ -173,11 +181,9 @@ export default function Home(props) {
                   </div>
                 </div>
                 <div className="col-lg-4 col-md-6 portfolio-item filter-template">
-                  <div class="card portfolio-wrap " >
-                    <div class="card-header">
-                      HTML, Css, Js, Jquery
-                    </div>
-                    <div class="card-body">
+                  <div class="card portfolio-wrap text-light" >
+                  <img src={h2} className="card-img" alt="h2" />
+                    <div class="card-body card-img-overlay">
                       <h5 class="card-title">Landing Page giới thiệu phòng khám</h5>
                       <p class="card-text">Làm trang lannding page giới thiệu phòng khám cho bạn bè.</p>
                       <a target='_blank' href="https://black134614.github.io/TamAnhDemo.github.io" class="btn btn-danger me-3">Xem</a>
@@ -185,12 +191,21 @@ export default function Home(props) {
                     </div>
                   </div>
                 </div>
+                <div className="col-lg-4 col-md-6 portfolio-item filter-template">
+                <div class="card portfolio-wrap text-light" >
+                <img src={h9} className="card-img" alt="h9" />
+                  <div class="card-body card-img-overlay ">
+                    <h5 class="card-title">Cover wedding template</h5>
+                    <p class="card-text">Cover home page trang wedding.</p>
+                    <a target='_blank' href="https://weddingcover.surge.sh/" class="btn btn-danger me-3">Xem</a>
+                    <a target='_blank' href="https://github.com/black134614/Cover_Template_Wedding" class="btn btn-warning">Soure code</a>
+                  </div>
+                </div>
+              </div>
                 <div className="col-lg-4 col-md-6 portfolio-item filter-reactjs">
                   <div class="card portfolio-wrap bg-success text-light">
-                    <div class="card-header">
-                      Reactjs
-                    </div>
-                    <div class="card-body">
+                  <img src={h3} className="card-img" alt="h3" />
+                    <div class="card-body card-img-overlay">
                       <h5 class="card-title">Máy tính đơn giản</h5>
                       <p class="card-text">App cover máy tính đơn giản để ôn học cơ bản reactjs, sử dụng class conponent.</p>
                       <a target='_blank' href="https://simple-caculator-naul.surge.sh/" class="btn btn-danger me-3">Xem</a>
@@ -200,10 +215,8 @@ export default function Home(props) {
                 </div>
                 <div className="col-lg-4 col-md-6 portfolio-item filter-reactjs">
                   <div class="card portfolio-wrap bg-secondary text-light">
-                    <div class="card-header">
-                      Reactjs
-                    </div>
-                    <div class="card-body">
+                  <img src={h4} className="card-img" alt="h4" />
+                    <div class="card-body card-img-overlay">
                       <h5 class="card-title">App đặt burger đơn giản</h5>
                       <p class="card-text">Xây dựng app đặt burger đơn giản học chia components, sử dụng class conponent.</p>
                       <a target='_blank' href="https://simple-burger-oder-naul.surge.sh/" class="btn btn-danger me-3">Xem</a>
@@ -213,10 +226,8 @@ export default function Home(props) {
                 </div>
                 <div className="col-lg-4 col-md-6 portfolio-item filter-reactjs">
                   <div class="card portfolio-wrap bg-primary text-light">
-                    <div class="card-header">
-                      Reactjs
-                    </div>
-                    <div class="card-body">
+                  <img src={h5} className="card-img" alt="h5" />
+                    <div class="card-body card-img-overlay">
                       <h5 class="card-title">Trang quản lý người dùng đơn giản</h5>
                       <p class="card-text">Xây dựng trang quản lý người dùng đơn giản để ôn tập về life cycle sử dụng class conponent.</p>
                       <a target='_blank' href="https://simple-users-manage-naul.surge.sh/" class="btn btn-danger me-3">Xem</a>
@@ -225,11 +236,9 @@ export default function Home(props) {
                   </div>
                 </div>
                 <div className="col-lg-4 col-md-6 portfolio-item filter-reactjs">
-                  <div class="card portfolio-wrap">
-                    <div class="card-header">
-                      Reactjs
-                    </div>
-                    <div class="card-body">
+                  <div class="card portfolio-wrap text-light">
+                  <img src={h6} className="card-img" alt="h6" />
+                    <div class="card-body card-img-overlay">
                       <h5 class="card-title">Phòng thử đồ đơn giản</h5>
                       <p class="card-text">Xây dựng chức năng phòng thử đồ đơn giản để ôn tập life cycle và hook, sử dụng funtional components và thư viện spring animation</p>
                       <a target='_blank' href="https://simple-dressing-room-naul.surge.sh/" class="btn btn-danger me-3">Xem</a>
@@ -239,28 +248,27 @@ export default function Home(props) {
                 </div>
                 <div className="col-lg-4 col-md-6 portfolio-item filter-reactjs">
                   <div class="card portfolio-wrap bg-success text-light">
-                    <div class="card-header">
-                      Reactjs
-                    </div>
-                    <div class="card-body">
+                  <img src={h7} className="card-img" alt="h7" />
+                    <div class="card-body card-img-overlay">
                       <h5 class="card-title">Trang quản lý task</h5>
-                      <p class="card-text">Build từ jira để xây dựng trang quản lý task.Dữ liệu lấy từ API cung cấp từ trung tâm. Sử dụng funtional components, thư viện redux, redux saga, ant design,...
-                        Task tự thực hiện: bình luận, đăng kí, chỉnh sửa và quản lý thông tin người dùng.</p>
-                      <a target='_blank' href="https://jiraclone-task-manage-naul.surge.sh/" class="btn btn-danger me-3">Xem</a>
+                      <p class="card-text">Build từ jira để xây dựng trang quản lý task.
+                      <br/>
+                      Tài khoản: luanvo1ad@gmail.com, Mật Khẩu: 123456</p>
+                      <a target='_blank' href="https://jiraclone-task-manage-naul.surge.sh/login" class="btn btn-danger me-3">Xem</a>
                       <a target='_blank' href="https://github.com/black134614/Reactjs_Khoa4_Jira-Clone_Task-User-Manage_Comments" class="btn btn-warning">Soure code</a>
                     </div>
                   </div>
                 </div>
                 <div className="col-lg-4 col-md-6 portfolio-item filter-reactjs">
                   <div class="card portfolio-wrap bg-secondary text-light">
-                    <div class="card-header">
-                      Reactjs
-                    </div>
-                    <div class="card-body">
+                  <img src={h8} className="card-img" alt="h8" />
+                    <div class="card-body card-img-overlay">
                       <h5 class="card-title">Trang đặt vé xem phim</h5>
-                      <p class="card-text">Xây dựng trang đặt vé xem phim. Dữ liệu lấy từ API cung cấp từ trung tâm.
-                        Task tự thực hiện: Đăng kí, trang người dùng, lịch sử đặt vé, trang quản lý người dùng bao gồm: thêm, sửa , xóa người dùng...</p>
+                      <p class="card-text">Xây dựng trang đặt vé xem phim.
+                      <br/>
+                      Tài Khoản: luanadmin, mật khẩu: 123456</p>
                       <a target='_blank' href="https://movieticket-naul.surge.sh/" class="btn btn-danger me-3">Xem</a>
+                      <a target='_blank' href="https://movieticket-naul.surge.sh/admin" class="btn btn-info me-3">admin</a>
                       <a target='_blank' href="https://github.com/black134614/React_Khoa5_MovieTicket" class="btn btn-warning">Soure code</a>
                     </div>
                   </div>
@@ -270,7 +278,7 @@ export default function Home(props) {
                     <div class="card-header">
                       Admin Reactjs, API .netCore 6 + SQL Server, User Page MVC
                     </div>
-                    <div class="card-body">
+                    <div class="card-body ">
                       <h5 class="card-title">Trang web mới cho trại dế Oanh Vĩnh</h5>
                       <p class="card-text">
                         Xây dựng trang web giới thiệu sản phẩm, đăng tin tức của trại dế Oanh Vĩnh từ Tây Ninh.

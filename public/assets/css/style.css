@@ -1,9 +1,4 @@
-/**
-* Template Name: iPortfolio - v3.7.0
-* Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
+
 
 /*--------------------------------------------------------------
 # General
@@ -601,6 +596,16 @@ section {
   padding: 0;
 }
 
+
+.portfolio .card .card-img-overlay{
+  background-color: #040b149b;
+}
+.portfolio .card img{
+  transition: all 0.5s;
+}
+.portfolio .card:hover img{
+  transform: scale(1.2);
+}
 /*--------------------------------------------------------------
 # Services
 --------------------------------------------------------------*/
