@@ -17,6 +17,7 @@ import c2 from '../assets/img/demos/2.jpg'
 import c3 from '../assets/img/demos/3.jpg'
 import c4 from '../assets/img/demos/4.png'
 import c5 from '../assets/img/demos/5.png'
+import c6 from '../assets/img/demos/6.png'
 
 export default function Home(props) {
   const dispatch = useDispatch();
@@ -310,20 +311,32 @@ export default function Home(props) {
               <p data-aos="fade-up">Chứng nhận từ trung tâm.</p>
             </div>
             <div className='row d-flex justify-content-center'>
-              <div className="col-lg-3 col-md-4 col-6 mb-3" data-aos="fade-up">
-                <img className='img-fluid' src={c1} alt='c1'/>
+              <div className="col-lg-3 col-md-4 col-6 mb-3 item" data-aos="fade-up">
+                <img className='img-fluid' src={c1} alt='c1' />
               </div>
-              <div className="col-lg-3  col-md-4 col-6 mb-3" data-aos="fade-up">
-                <img className='img-fluid' src={c2} alt='c2'/>
+              <div className="col-lg-3  col-md-4 col-6 mb-3 item" data-aos="fade-up">
+                <img className='img-fluid' src={c2} alt='c2' />
               </div>
-              <div className="col-lg-3  col-md-4 col-6 mb-3" data-aos="fade-up">
-                <img className='img-fluid' src={c3} alt='c3'/>
+              <div className="col-lg-3  col-md-4 col-6 mb-3 item" data-aos="fade-up">
+                <img className='img-fluid' src={c3} alt='c3' />
               </div>
-              <div className="col-lg-3  col-md-4 col-6 mb-3" data-aos="fade-up">
-                <img className='img-fluid' src={c4} alt='c4'/>
+              <div className="col-lg-3  col-md-4 col-6 mb-3 item" data-aos="fade-up">
+                <a target='_blank' href='https://drive.google.com/file/d/1WTdPOt5qM6rykO-l8QOjB1p5q088ntF-/view'>
+                  <img className='img-fluid' src={c4} alt='c4' />
+                  <span>Xem bảng điểm</span>
+                </a>
               </div>
-              <div className="col-lg-3  col-md-4 col-6 mb-3" data-aos="fade-up">
-                <img className='img-fluid' src={c5} alt='c5'/>
+              <div className="col-lg-3  col-md-4 col-6 mb-3 item" data-aos="fade-up">
+                <a target='_blank' href='https://drive.google.com/file/d/1xpUwAHfOAW-nmZC8yGudVMfpzIP2AGPC/view'>
+                  <img className='img-fluid' src={c6} alt='c6' />
+                  <span>Xem bảng điểm</span>
+                </a>
+              </div>
+              <div className="col-lg-3  col-md-4 col-6 mb-3 item" data-aos="fade-up">
+                <a target='_blank' href='https://drive.google.com/file/d/1S7cGLAp5iF0aZTmOtQ7DmQYvyAf-bT-u/view'>
+                  <img className='img-fluid' src={c5} alt='c5' />
+                  <span>Xem bảng điểm</span>
+                </a>
               </div>
             </div>
           </div>

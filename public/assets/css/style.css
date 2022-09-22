@@ -1,5 +1,3 @@
-
-
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
@@ -18,7 +16,12 @@ a:hover {
   text-decoration: none;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: "Raleway", sans-serif;
 }
 
@@ -84,7 +87,8 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Poppins", sans-serif;
   text-align: center;
 }
-#header .profile h1 a, #header .profile h1 a:hover {
+#header .profile h1 a,
+#header .profile h1 a:hover {
   color: #fff;
   text-decoration: none;
 }
@@ -113,7 +117,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media (max-width: 1199px) {
-  #header, #header.close {
+  #header,
+  #header.close {
     left: -300px;
   }
 
@@ -141,7 +146,8 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
   white-space: nowrap;
 }
-.nav-menu a, .nav-menu a:focus {
+.nav-menu a,
+.nav-menu a:focus {
   display: flex;
   align-items: center;
   color: #a8a9b4;
@@ -150,7 +156,8 @@ h1, h2, h3, h4, h5, h6 {
   transition: 0.3s;
   font-size: 15px;
 }
-.nav-menu a i, .nav-menu a:focus i {
+.nav-menu a i,
+.nav-menu a:focus i {
   font-size: 24px;
   padding-right: 8px;
   color: #6f7180;
@@ -159,7 +166,7 @@ h1, h2, h3, h4, h5, h6 {
   text-decoration: none;
   color: #fff;
 }
- .nav-menu li:hover > a i {
+.nav-menu li:hover > a i {
   color: #149ddd;
 }
 
@@ -397,7 +404,7 @@ section {
   background-color: #149ddd;
 }
 
-.skills ul li{
+.skills ul li {
   margin-top: 5px;
 }
 /*--------------------------------------------------------------
@@ -481,7 +488,8 @@ section {
   margin-bottom: 5px;
   transition: all 0.3s ease-in-out;
 }
-.portfolio #portfolio-flters li:hover, .portfolio #portfolio-flters li.filter-active {
+.portfolio #portfolio-flters li:hover,
+.portfolio #portfolio-flters li.filter-active {
   color: #149ddd;
 }
 .portfolio #portfolio-flters li:last-child {
@@ -596,15 +604,23 @@ section {
   padding: 0;
 }
 
-
-.portfolio .card .card-img-overlay{
+.portfolio .card .card-img-overlay {
   background-color: #040b149b;
 }
-.portfolio .card img{
+.portfolio .card img {
   transition: all 0.5s;
+  min-height: 225px;
+  object-fit: cover;
 }
-.portfolio .card:hover img{
+.portfolio .card:hover img {
   transform: scale(1.2);
+}
+.portfolio .card .card-body{
+  text-align: center;
+  
+}
+.portfolio .card .card-body a{
+  margin-bottom: 0.5rem;
 }
 /*--------------------------------------------------------------
 # Services
@@ -656,7 +672,8 @@ section {
 /*--------------------------------------------------------------
 # Testimonials
 --------------------------------------------------------------*/
-.testimonials .testimonials-carousel, .testimonials .testimonials-slider {
+.testimonials .testimonials-carousel,
+.testimonials .testimonials-slider {
   overflow: hidden;
 }
 .testimonials .testimonial-item {
@@ -680,7 +697,8 @@ section {
   color: #999;
   margin: 0;
 }
-.testimonials .testimonial-item .quote-icon-left, .testimonials .testimonial-item .quote-icon-right {
+.testimonials .testimonial-item .quote-icon-left,
+.testimonials .testimonial-item .quote-icon-right {
   color: #c3e8fa;
   font-size: 26px;
 }
@@ -730,7 +748,40 @@ section {
 .testimonials .swiper-pagination .swiper-pagination-bullet-active {
   background-color: #149ddd;
 }
-
+/*--------------------------------------------------------------
+# certificate
+--------------------------------------------------------------*/
+.certificate .item{
+  overflow: hidden;
+  padding: 0 0.5rem;
+  position: relative;
+}
+.certificate .item img {
+  transition: all 0.5s ease-in-out;
+}
+.certificate .item:hover img{
+  transform: scale(1.1);
+}
+.certificate .item span{
+  position: absolute;
+  top: 0;
+  left: 0.5rem;
+  right: 0.5rem;
+  bottom: 0;
+  text-align: center;
+  padding-top: 50%;
+  background-color: #040b1400;
+  transition: all 0.5s ease-in-out;
+  color: #040b1400;
+}
+.certificate .item:hover span{
+  background-color: #040b145a;
+  left: 0;
+  right: 0;
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
 /*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/
@@ -793,7 +844,9 @@ section {
   background: #149ddd;
   color: #fff;
 }
-.contact .info .email:hover i, .contact .info .address:hover i, .contact .info .phone:hover i {
+.contact .info .email:hover i,
+.contact .info .address:hover i,
+.contact .info .phone:hover i {
   background: #149ddd;
   color: #fff;
 }
@@ -856,7 +909,8 @@ section {
 .contact .php-email-form label {
   padding-bottom: 8px;
 }
-.contact .php-email-form input, .contact .php-email-form textarea {
+.contact .php-email-form input,
+.contact .php-email-form textarea {
   border-radius: 0;
   box-shadow: none;
   font-size: 14px;
@@ -867,7 +921,7 @@ section {
 .contact .php-email-form textarea {
   padding: 10px 15px;
 }
-.contact .php-email-form button[type=submit] {
+.contact .php-email-form button[type="submit"] {
   background: #149ddd;
   border: 0;
   padding: 10px 24px;
@@ -875,7 +929,7 @@ section {
   transition: 0.4s;
   border-radius: 4px;
 }
-.contact .php-email-form button[type=submit]:hover {
+.contact .php-email-form button[type="submit"]:hover {
   background: #37b3ed;
 }
 @-webkit-keyframes animate-loading {
@@ -966,12 +1020,11 @@ section {
   }
 }
 
-
 @media (max-width: 575.98px) {
-  #hero{
+  #hero {
     height: 50vh;
   }
-  #hero:before{
+  #hero:before {
     bottom: 50vh;
   }
 }
