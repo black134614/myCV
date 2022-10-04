@@ -14,7 +14,7 @@ export default function Header() {
             <header id="header" className={stateNav ? 'open' : 'close'}>
                 <div className="d-flex flex-column">
                     <div className="profile">
-                        <img src={avatar} alt className="img-fluid rounded-circle"  data-aos="fade-in" />
+                        <img src={avatar} alt="avatar" className="img-fluid rounded-circle"  data-aos="fade-in" />
                         <h1 className="text-light"><a href="index.html"  data-aos="fade-in" data-aos-delay='100'>Võ Minh Luân</a></h1>
                         <div className="social-links mt-3 text-center"  data-aos="fade-in" data-aos-delay='200'>
                             <a target='_blank' href="https://www.facebook.com/ov.naul.1" className="facebook"><i className="bx bxl-facebook" /></a>

@@ -1,6 +1,8 @@
 import React, { useEffect } from 'react'
 import { useDispatch } from 'react-redux';
 import { hideLoadding } from '../redux/LoaddingReducer/LoaddingReducer';
+import ReactTooltip from 'react-tooltip';
+
 import HeroHome from '../components/HeroHome/HeroHome'
 import avatar from '../assets/img/luan.jpg'
 import h1 from '../assets/img/demos/h1-min.png'
@@ -28,7 +30,7 @@ export default function Home(props) {
     }, 3000);
   }, []);
   return (
-    <div data-bs-spy="scroll" data-bs-target="#header" data-bs-offset="0" className="scrollspy-example" tabindex="0">
+    <div data-bs-spy="scroll" data-bs-target="#header" data-bs-offset="0" className="scrollspy-example" tabIndex="0">
       {/* ======= Hero Section ======= */}
       <HeroHome />
       {/* End Hero */}
@@ -51,7 +53,7 @@ export default function Home(props) {
             </div>
             <div className="row">
               <div className="col-lg-4" data-aos="fade-right">
-                <img src={avatar} loading='lazy' className="img-fluid" alt />
+                <img src={avatar} loading='lazy' className="img-fluid" alt="avatar" />
               </div>
               <div className="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left" data-aos-delay="500">
                 <h3>Designer &amp; Web Developer.</h3>
@@ -175,128 +177,129 @@ export default function Home(props) {
               </div>
             </div>
             <div className="row portfolio-container" data-aos="fade-up">
-              <div className="col-lg-4 col-md-6 portfolio-item filter-template">
-                <div class="card portfolio-wrap bg-primary text-light">
+              <div className="col-lg-4 col-md-6 portfolio-item filter-template" data-tip="Thực hành cover template nhưng sử dụng SASS">
+                <div className="card portfolio-wrap bg-primary text-light">
                   <img src={h1} className="card-img" alt="h1" />
-                  <div class="card-body card-img-overlay">
-                    <h5 class="card-title">Massive Home Template</h5>
-                    <p class="card-text">Cover trang chủ Massive template bằng SASS</p>
-                    <a target='_blank' href="http://massivehome-naul.surge.sh/" class="btn btn-danger me-3">Xem</a>
-                    <a target='_blank' href="https://github.com/black134614/MassiveHome_SASS_BS5" class="btn btn-warning">Soure code</a>
+                  <div className="card-body card-img-overlay">
+                    <h5 className="card-title">Massive Home Template</h5>
+                    <p className="card-text">Cover trang chủ Massive template bằng SASS</p>
+                    <a target='_blank' href="http://massivehome-naul.surge.sh/" className="btn btn-danger me-3">Xem</a>
+                    <a target='_blank' href="https://github.com/black134614/MassiveHome_SASS_BS5" className="btn btn-warning">Soure code</a>
                   </div>
                 </div>
               </div>
-              <div className="col-lg-4 col-md-6 portfolio-item filter-template">
-                <div class="card portfolio-wrap text-light" >
+              <div className="col-lg-4 col-md-6 portfolio-item filter-template" data-tip="Thử sức làm một trang landding page sử dụng plugin, jquery , boostrap">
+                <div className="card portfolio-wrap text-light">
                   <img src={h2} className="card-img" alt="h2" />
-                  <div class="card-body card-img-overlay">
-                    <h5 class="card-title">Landing Page giới thiệu phòng khám</h5>
-                    <p class="card-text">Làm trang lannding page giới thiệu phòng khám cho bạn bè.</p>
-                    <a target='_blank' href="https://black134614.github.io/TamAnhDemo.github.io" class="btn btn-danger me-3">Xem</a>
-                    <a target='_blank' href="https://github.com/black134614/TamAnhDemo.github.io" class="btn btn-warning">Soure code</a>
+                  <div className="card-body card-img-overlay">
+                    <h5 className="card-title">Landing Page giới thiệu phòng khám</h5>
+                    <p className="card-text">Làm trang lannding page giới thiệu phòng khám cho bạn bè.</p>
+                    <a target='_blank' href="https://black134614.github.io/TamAnhDemo.github.io" className="btn btn-danger me-3">Xem</a>
+                    <a target='_blank' href="https://github.com/black134614/TamAnhDemo.github.io" className="btn btn-warning">Soure code</a>
                   </div>
                 </div>
               </div>
-              <div className="col-lg-4 col-md-6 portfolio-item filter-template">
-                <div class="card portfolio-wrap text-light" >
+              <div className="col-lg-4 col-md-6 portfolio-item filter-template" data-tip="Tập cover template và học tư duy ui-ux của nước ngoài">
+                <div className="card portfolio-wrap text-light" >
                   <img src={h9} className="card-img" alt="h9" />
-                  <div class="card-body card-img-overlay ">
-                    <h5 class="card-title">Cover wedding template</h5>
-                    <p class="card-text">Cover home page trang wedding.</p>
-                    <a target='_blank' href="https://weddingcover.surge.sh/" class="btn btn-danger me-3">Xem</a>
-                    <a target='_blank' href="https://github.com/black134614/Cover_Template_Wedding" class="btn btn-warning">Soure code</a>
+                  <div className="card-body card-img-overlay ">
+                    <h5 className="card-title">Cover wedding template</h5>
+                    <p className="card-text">Cover home page trang wedding.</p>
+                    <a target='_blank' href="https://weddingcover.surge.sh/" className="btn btn-danger me-3">Xem</a>
+                    <a target='_blank' href="https://github.com/black134614/Cover_Template_Wedding" className="btn btn-warning">Soure code</a>
                   </div>
                 </div>
               </div>
-              <div className="col-lg-4 col-md-6 portfolio-item filter-reactjs">
-                <div class="card portfolio-wrap bg-success text-light">
+              <div className="col-lg-4 col-md-6 portfolio-item filter-reactjs"   data-tip="viết app reactjs cơ bản - nhập môn">
+                <div className="card portfolio-wrap bg-success text-light">
                   <img src={h3} className="card-img" alt="h3" />
-                  <div class="card-body card-img-overlay">
-                    <h5 class="card-title">Máy tính đơn giản</h5>
-                    <p class="card-text">App cover máy tính đơn giản để ôn học cơ bản reactjs, sử dụng class conponent.</p>
-                    <a target='_blank' href="https://simple-caculator-naul.surge.sh/" class="btn btn-danger me-3">Xem</a>
-                    <a target='_blank' href="https://github.com/black134614/Reactjs_Khoa1_Caculator" class="btn btn-warning">Soure code</a>
+                  <div className="card-body card-img-overlay">
+                    <h5 className="card-title">Máy tính đơn giản</h5>
+                    <p className="card-text">App cover máy tính đơn giản để ôn học cơ bản reactjs, sử dụng class conponent.</p>
+                    <a target='_blank' href="https://simple-caculator-naul.surge.sh/" className="btn btn-danger me-3">Xem</a>
+                    <a target='_blank' href="https://github.com/black134614/Reactjs_Khoa1_Caculator" className="btn btn-warning">Soure code</a>
                   </div>
                 </div>
               </div>
-              <div className="col-lg-4 col-md-6 portfolio-item filter-reactjs">
-                <div class="card portfolio-wrap bg-secondary text-light">
+              <div className="col-lg-4 col-md-6 portfolio-item filter-reactjs"   data-tip="Sử dụng class conponent và thực hành thao tác với state">
+                <div className="card portfolio-wrap bg-secondary text-light">
                   <img src={h4} className="card-img" alt="h4" />
-                  <div class="card-body card-img-overlay">
-                    <h5 class="card-title">App đặt burger đơn giản</h5>
-                    <p class="card-text">Xây dựng app đặt burger đơn giản học chia components, sử dụng class conponent.</p>
-                    <a target='_blank' href="https://simple-burger-oder-naul.surge.sh/" class="btn btn-danger me-3">Xem</a>
-                    <a target='_blank' href="https://github.com/black134614/Reactjs_Khoa2_Components_Burgur-Order-App" class="btn btn-warning">Soure code</a>
+                  <div className="card-body card-img-overlay">
+                    <h5 className="card-title">App đặt burger đơn giản</h5>
+                    <p className="card-text">Xây dựng app đặt burger đơn giản học chia components, sử dụng class conponent.</p>
+                    <a target='_blank' href="https://simple-burger-oder-naul.surge.sh/" className="btn btn-danger me-3">Xem</a>
+                    <a target='_blank' href="https://github.com/black134614/Reactjs_Khoa2_Components_Burgur-Order-App" className="btn btn-warning">Soure code</a>
                   </div>
                 </div>
               </div>
-              <div className="col-lg-4 col-md-6 portfolio-item filter-reactjs">
-                <div class="card portfolio-wrap bg-primary text-light">
+              <div className="col-lg-4 col-md-6 portfolio-item filter-reactjs"   data-tip="Sử dụng class conponent và thực hành thao tác với state và lifecycle">
+                <div className="card portfolio-wrap bg-primary text-light">
                   <img src={h5} className="card-img" alt="h5" />
-                  <div class="card-body card-img-overlay">
-                    <h5 class="card-title">Trang quản lý người dùng đơn giản</h5>
-                    <p class="card-text">Xây dựng trang quản lý người dùng đơn giản để ôn tập về life cycle sử dụng class conponent.</p>
-                    <a target='_blank' href="https://simple-users-manage-naul.surge.sh/" class="btn btn-danger me-3">Xem</a>
-                    <a target='_blank' href="https://github.com/black134614/Reactjs_Khoa3_LifeCycle_Quan-Ly-Nguoi-Dung" class="btn btn-warning">Soure code</a>
+                  <div className="card-body card-img-overlay">
+                    <h5 className="card-title">Trang quản lý người dùng đơn giản</h5>
+                    <p className="card-text">Xây dựng trang quản lý người dùng đơn giản để ôn tập về life cycle sử dụng class conponent.</p>
+                    <a target='_blank' href="https://simple-users-manage-naul.surge.sh/" className="btn btn-danger me-3">Xem</a>
+                    <a target='_blank' href="https://github.com/black134614/Reactjs_Khoa3_LifeCycle_Quan-Ly-Nguoi-Dung" className="btn btn-warning">Soure code</a>
                   </div>
                 </div>
               </div>
-              <div className="col-lg-4 col-md-6 portfolio-item filter-reactjs">
-                <div class="card portfolio-wrap text-light">
+              <div className="col-lg-4 col-md-6 portfolio-item filter-reactjs"  data-tip="Sử dụng functional conponent và thực hành thao tác với hook cơ bản và thư viện spring animation">
+                <div className="card portfolio-wrap text-light">
                   <img src={h6} className="card-img" alt="h6" />
-                  <div class="card-body card-img-overlay">
-                    <h5 class="card-title">Phòng thử đồ đơn giản</h5>
-                    <p class="card-text">Xây dựng chức năng phòng thử đồ đơn giản để ôn tập life cycle và hook, sử dụng funtional components và thư viện spring animation</p>
-                    <a target='_blank' href="https://simple-dressing-room-naul.surge.sh/" class="btn btn-danger me-3">Xem</a>
-                    <a target='_blank' href="https://github.com/black134614/Reactjs_Khoa3_Hook-Spring-Animation_Dressing-Room" class="btn btn-warning">Soure code</a>
+                  <div className="card-body card-img-overlay">
+                    <h5 className="card-title">Phòng thử đồ đơn giản</h5>
+                    <p className="card-text">Xây dựng chức năng phòng thử đồ đơn giản để ôn tập life cycle và hook, sử dụng funtional components và thư viện spring animation</p>
+                    <a target='_blank' href="https://simple-dressing-room-naul.surge.sh/" className="btn btn-danger me-3">Xem</a>
+                    <a target='_blank' href="https://github.com/black134614/Reactjs_Khoa3_Hook-Spring-Animation_Dressing-Room" className="btn btn-warning">Soure code</a>
                   </div>
                 </div>
               </div>
-              <div className="col-lg-4 col-md-6 portfolio-item filter-reactjs">
-                <div class="card portfolio-wrap bg-success text-light">
+              <div className="col-lg-4 col-md-6 portfolio-item filter-reactjs" data-tip={`Trang được build từ jira reactjs template chuyên để build một trang quản lý sử dụng reactjs. <br/> Sử dụng class component, chia HOC , dữ liệu lấy từ api có sẵn thông qua redux, redux-saga, thư viện thiết kế ant design, <br/> form xử lý bẳng fomrik, yup,...<br/>Chức năng: Đăng kí, Đăng nhập, Quản lý dự án, Quản lý task, Quản lý người dùng,... <br/>Tài khoản: luanvo1ad@gmail.com, Mật Khẩu: 123456`}>
+                <div className="card portfolio-wrap bg-success text-light">
                   <img src={h7} className="card-img" alt="h7" />
-                  <div class="card-body card-img-overlay">
-                    <h5 class="card-title">Trang quản lý task</h5>
-                    <p class="card-text">Build từ jira để xây dựng trang quản lý task.
+                  <div className="card-body card-img-overlay">
+                    <h5 className="card-title">Trang quản lý task</h5>
+                    <p className="card-text">Build từ jira để xây dựng trang quản lý task.
                       <br />
                       Tài khoản: luanvo1ad@gmail.com, Mật Khẩu: 123456</p>
-                    <a target='_blank' href="https://jiraclone-task-manage-naul.surge.sh/login" class="btn btn-danger me-3">Xem</a>
-                    <a target='_blank' href="https://github.com/black134614/Reactjs_Khoa4_Jira-Clone_Task-User-Manage_Comments" class="btn btn-warning">Soure code</a>
+                    <a target='_blank' href="https://jiraclone-task-manage-naul.surge.sh/login" className="btn btn-danger me-3">Xem</a>
+                    <a target='_blank' href="https://github.com/black134614/Reactjs_Khoa4_Jira-Clone_Task-User-Manage_Comments" className="btn btn-warning">Soure code</a>
                   </div>
                 </div>
               </div>
-              <div className="col-lg-4 col-md-6 portfolio-item filter-reactjs">
-                <div class="card portfolio-wrap bg-secondary text-light">
+              <div className="col-lg-4 col-md-6 portfolio-item filter-reactjs" data-tip="Thư viện chính yếu: redux, redux-thunk, axios, antd,... <br/>API cung cấp sẵn, sử dụng tailwind v2 + antd để thiết kế giao diện và HOC ,ultis tiện ích từ project jiraclone.<br/>Chức năng chính: Đăng kí , đăng nhập, Hiển thị phim, đặt vé online bằng signalR, Quản lý người dùng, Quản lý film,...<br/>Hiện tại antd nặng và hay lỗi đang xây dựng lại và bổ dung theme dark-light, responsive tốt hơn (hoàn toàn sử dụng tailwind v3)">
+                <div className="card portfolio-wrap bg-secondary text-light">
                   <img src={h8} className="card-img" alt="h8" />
-                  <div class="card-body card-img-overlay">
-                    <h5 class="card-title">Trang đặt vé xem phim</h5>
-                    <p class="card-text">Xây dựng trang đặt vé xem phim.
+                  <div className="card-body card-img-overlay">
+                    <h5 className="card-title">Trang đặt vé xem phim</h5>
+                    <p className="card-text">Xây dựng trang đặt vé xem phim.
                       <br />
                       Tài Khoản: luanadmin, mật khẩu: 123456</p>
-                    <a target='_blank' href="https://movieticket-naul.surge.sh/" class="btn btn-danger me-3">Xem</a>
-                    <a target='_blank' href="https://movieticket-naul.surge.sh/admin" class="btn btn-info me-3">admin</a>
-                    <a target='_blank' href="https://github.com/black134614/React_Khoa5_MovieTicket" class="btn btn-warning">Soure code</a>
+                    <a target='_blank' href="https://movieticket-naul.surge.sh/" className="btn btn-danger me-3">Xem</a>
+                    <a target='_blank' href="https://movieticket-naul.surge.sh/admin" className="btn btn-info me-3">admin</a>
+                    <a target='_blank' href="https://github.com/black134614/React_Khoa5_MovieTicket" className="btn btn-warning">Soure code</a>
                   </div>
                 </div>
               </div>
               <div className="col-lg-4 col-md-6 portfolio-item filter-realproject">
-                <div class="card portfolio-wrap bg-primary text-light">
-                  <div class="card-header">
+                <div className="card portfolio-wrap bg-primary text-light">
+                  <div className="card-header">
                     Admin Reactjs, API .netCore 6 + SQL Server, User Page MVC
                   </div>
-                  <div class="card-body ">
-                    <h5 class="card-title">Trang web mới cho trại dế Oanh Vĩnh</h5>
-                    <p class="card-text">
+                  <div className="card-body ">
+                    <h5 className="card-title">Trang web mới cho trại dế Oanh Vĩnh</h5>
+                    <p className="card-text">
                       Xây dựng trang web giới thiệu sản phẩm, đăng tin tức của trại dế Oanh Vĩnh từ Tây Ninh.
                       <br />
-                      <ul>
-                        <li>Trang hiện đang trong quá trình chờ deloy.</li>
-                        <li>Team có 2 thành viên.</li>
-                        <li>Task chính của mình: Xây dựng trang admin dựa trên API, thiết kế trang người dùng, thiết kế database, đổ dữ liệu người dùng. Dữ liệu trong database là demo nên có thể public.</li>
-                        <li>Dữ liệu trong database là demo nên mình xin public được.</li>
-                      </ul>
                     </p>
-                    <a target='_blank' href="https://github.com/black134614/OanhVinhWebFull" class="btn btn-warning">Soure code</a>
+                    <ul>
+                      <li>Trang hiện đang trong quá trình chờ deloy.</li>
+                      <li>Team có 2 thành viên.</li>
+                      <li>Task chính của mình: Xây dựng trang admin dựa trên API, thiết kế trang người dùng, thiết kế database, đổ dữ liệu người dùng. Dữ liệu trong database là demo nên có thể public.</li>
+                      <li>Dữ liệu trong database là demo nên mình xin public được.</li>
+                    </ul>
+                    <a target='_blank' href="https://youtu.be/wMU5zgRMcO8?t=17" className="btn btn-danger me-3">Demo Video</a>
+                    <a target='_blank' href="https://github.com/black134614/OanhVinhWebFull" className="btn btn-warning">Soure code</a>
                   </div>
                 </div>
               </div>

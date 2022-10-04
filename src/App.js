@@ -7,6 +7,7 @@ import { Route, Router, Routes, unstable_HistoryRouter as HistoryRouter } from "
 import HomeTemplate from './templates/HomeTemplate'
 import Home from './Pages/Home'
 import Loadding from './components/Loadding/Loadding'
+import ReactTooltip from 'react-tooltip';
 
 export const history = createBrowserHistory({ window });
 
@@ -14,6 +15,7 @@ function App() {
   return (
     <HistoryRouter history={history}>
       <Loadding />
+      <ReactTooltip multiline="true" clickable="true" />
       <Routes >
         <Route path='' element={<HomeTemplate />}>
           <Route index path='' element={<Home />}></Route>
