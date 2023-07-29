@@ -20,6 +20,9 @@ import c3 from '../assets/img/demos/3.jpg'
 import c4 from '../assets/img/demos/4.png'
 import c5 from '../assets/img/demos/5.png'
 import c6 from '../assets/img/demos/6.png'
+import demoTienDungCPC from '../assets/img/tiendungcpc-demo.gif'
+import demoSankaTech from '../assets/img/demo-SankaTech.gif'
+import demoHomeStay from '../assets/img/demoHomeStay.gif'
 
 export default function Home(props) {
   const dispatch = useDispatch();
@@ -42,13 +45,20 @@ export default function Home(props) {
             <div className="section-title">
               <h2 data-aos="fade-up">Giới thiệu</h2>
               <p data-aos="fade-up">
-                Chào! Mình là Luân đến từ Tây Ninh, hiện tại mình đang sống và làm việc ở Bình Dương.
+                Chào nhà tuyển dụng! Mình là Luân đến từ Tây Ninh, hiện tại mình đang sống và làm việc tại Châu Thành - Tây Ninh.
                 <br />
                 Trước dịch 2018-2019, có học offline 3 khóa cơ bản về Front end và Back end thời còn chuộng jquery từ thầy Lê Minh Hiếu hiện đang là giảng viên trường đại học Kinh Tế - Kỹ Thuật Bình Dương.
                 <br />
                 Trong và sau mùa dịch mình theo học 3 khóa online của Cybersoft dạy từ căn bản tư duy lập trình , front end cơ bản - nâng cao và cuối cùng là reactjs.
                 <br />
                 Hiện tại mình đã có gia đình nên sẽ ưu tiên tìm việc gần nhà.
+                <h5 className='mt-4'>Kỹ Năng khác</h5>
+                <ul className='mt-3 ps-5'>
+                  <li >Có khả năng , am hiểu về SEO Facebook, SEO Google, SEO GoogleMap, Thiết kế, Edit Ảnh và Video...</li>
+                  <li>Có Kỹ năng làm việc độc lập - làm việc nhóm để hoàn thành công việc. </li>
+                  <li>Kỹ năng văn phòng tốt, sử dụng tốt Excel, lập trình VBA tạo, chỉnh sửa, fix lỗi macro,... và kỹ năng soạn thảo trình bày Word, Powerpoint </li>
+                  <li>Từng sử dụng rất nhiều phần mềm. Thích ứng nhanh và sử dụng tốt các phầm mềm nội bộ, phần mềm thuê bên ngoài.</li>
+                </ul>
               </p>
             </div>
             <div className="row">
@@ -64,7 +74,7 @@ export default function Home(props) {
                       <li><i className="bi bi-chevron-right" /> <strong>Ngày sinh:</strong> <span>06-06-1997</span></li>
                       <li><i className="bi bi-chevron-right" /> <strong>Github:</strong> <span><a target='_blank' href='https://github.com/black134614'>black134614</a></span></li>
                       <li><i className="bi bi-chevron-right" /> <strong>Số điện thoại:</strong><a href='tel:+84354624774'><span>035.462.4774</span></a></li>
-                      <li><i className="bi bi-chevron-right" /> <strong>Nơi ở:</strong> <span>Bình Chuẩn, Bình Dương</span></li>
+                      <li><i className="bi bi-chevron-right" /> <strong>Nơi ở:</strong> <span>Châu Thành, Tây Ninh</span></li>
                     </ul>
                   </div>
 
@@ -177,6 +187,37 @@ export default function Home(props) {
               </div>
             </div>
             <div className="row portfolio-container" data-aos="fade-up">
+              <div className="col-lg-4 col-md-6 portfolio-item filter-realproject" data-tip="Phát triển web & quản trị website Tiến Dũng CPC">
+                <div className="card portfolio-wrap bg-primary text-light">
+                  <img src={demoTienDungCPC} />
+                  <div className="card-body card-img-overlay">
+                    <h5 className="card-title">Web Develope & SEO </h5>
+                    <p className="card-text">Phát triển web và SEO cho công ty tư nhân TNHH Tiến Dũng CPC Bình Dương - Chuyên bán lẻ phụ kiện, PC, Laptop , đồ dùng công nghệ... thi công lắp đặt cammera, đèn năng lượng mặt trời.</p>
+                    <a target='_blank' href="http://massivehome-naul.surge.sh/" className="btn btn-danger me-3" onClick={(e) => { e.preventDefault() }}>Đang Thực Hiện Deloy</a>
+                  </div>
+                </div>
+              </div>
+              <div className="col-lg-4 col-md-6 portfolio-item filter-realproject" data-tip="Phát triển web & quản trị website Tiến Dũng CPC ">
+                <div className="card portfolio-wrap bg-primary text-light">
+                  <img src={demoSankaTech} />
+                  <div className="card-body card-img-overlay">
+                    <h5 className="card-title">Web Develope & SEO</h5>
+                    <p className="card-text">Phát triển web và SEO cho Sanka Tech - Chuyên bán các mặt hàng gia dụng - gia đình như: Máy nước nóng, Máy lọc nước, Bếp Gas,... của hãng Sanka</p>
+                    <a target='_blank' href="#" className="btn btn-danger me-3" onClick={(e) => { e.preventDefault() }}>Đang Thực Hiện Thiết Kế</a>
+                  </div>
+                </div>
+              </div>
+              <div className="col-lg-4 col-md-6 portfolio-item filter-realproject" data-tip="Phát triển web & quản trị website Tiến Dũng CPC ">
+              <div className="card portfolio-wrap bg-primary text-light">
+                <img src={demoHomeStay} />
+                <div className="card-body card-img-overlay">
+                  <h5 className="card-title">Home Sweet Home Lannding Page - Thiết lập bán phòng</h5>
+                  <p className="card-text">Phát triển Landing Page & Thiết lập bán phòng kênh Agoda, Booking và hướng dẫn SEO facebook tăng traffic và chứng thực cho Home Stay Home Sweet Home Tây Ninh.</p>
+                  <a target='_blank' href="https://homestaytayninh.mooo.com/" className="btn btn-danger me-3" >Xem</a>
+                  <a target='_blank' href="https://github.com/black134614/TayNinhHomeStay.github.io" className="btn btn-warning">Soure code</a>
+                </div>
+              </div>
+            </div>
               <div className="col-lg-4 col-md-6 portfolio-item filter-template" data-tip="Thực hành cover template nhưng sử dụng SASS">
                 <div className="card portfolio-wrap bg-primary text-light">
                   <img src={h1} className="card-img" alt="h1" />
@@ -210,7 +251,7 @@ export default function Home(props) {
                   </div>
                 </div>
               </div>
-              <div className="col-lg-4 col-md-6 portfolio-item filter-reactjs"   data-tip="viết app reactjs cơ bản - nhập môn">
+              <div className="col-lg-4 col-md-6 portfolio-item filter-reactjs" data-tip="viết app reactjs cơ bản - nhập môn">
                 <div className="card portfolio-wrap bg-success text-light">
                   <img src={h3} className="card-img" alt="h3" />
                   <div className="card-body card-img-overlay">
@@ -221,7 +262,7 @@ export default function Home(props) {
                   </div>
                 </div>
               </div>
-              <div className="col-lg-4 col-md-6 portfolio-item filter-reactjs"   data-tip="Sử dụng class conponent và thực hành thao tác với state">
+              <div className="col-lg-4 col-md-6 portfolio-item filter-reactjs" data-tip="Sử dụng class conponent và thực hành thao tác với state">
                 <div className="card portfolio-wrap bg-secondary text-light">
                   <img src={h4} className="card-img" alt="h4" />
                   <div className="card-body card-img-overlay">
@@ -232,7 +273,7 @@ export default function Home(props) {
                   </div>
                 </div>
               </div>
-              <div className="col-lg-4 col-md-6 portfolio-item filter-reactjs"   data-tip="Sử dụng class conponent và thực hành thao tác với state và lifecycle">
+              <div className="col-lg-4 col-md-6 portfolio-item filter-reactjs" data-tip="Sử dụng class conponent và thực hành thao tác với state và lifecycle">
                 <div className="card portfolio-wrap bg-primary text-light">
                   <img src={h5} className="card-img" alt="h5" />
                   <div className="card-body card-img-overlay">
@@ -243,7 +284,7 @@ export default function Home(props) {
                   </div>
                 </div>
               </div>
-              <div className="col-lg-4 col-md-6 portfolio-item filter-reactjs"  data-tip="Sử dụng functional conponent và thực hành thao tác với hook cơ bản và thư viện spring animation">
+              <div className="col-lg-4 col-md-6 portfolio-item filter-reactjs" data-tip="Sử dụng functional conponent và thực hành thao tác với hook cơ bản và thư viện spring animation">
                 <div className="card portfolio-wrap text-light">
                   <img src={h6} className="card-img" alt="h6" />
                   <div className="card-body card-img-overlay">
@@ -281,28 +322,7 @@ export default function Home(props) {
                   </div>
                 </div>
               </div>
-              <div className="col-lg-4 col-md-6 portfolio-item filter-realproject">
-                <div className="card portfolio-wrap bg-primary text-light">
-                  <div className="card-header">
-                    Admin Reactjs, API .netCore 6 + SQL Server, User Page MVC
-                  </div>
-                  <div className="card-body ">
-                    <h5 className="card-title">Trang web mới cho trại dế Oanh Vĩnh</h5>
-                    <p className="card-text">
-                      Xây dựng trang web giới thiệu sản phẩm, đăng tin tức của trại dế Oanh Vĩnh từ Tây Ninh.
-                      <br />
-                    </p>
-                    <ul>
-                      <li>Trang hiện đang trong quá trình chờ deloy.</li>
-                      <li>Team có 2 thành viên.</li>
-                      <li>Task chính của mình: Xây dựng trang admin dựa trên API, thiết kế trang người dùng, thiết kế database, đổ dữ liệu người dùng. Dữ liệu trong database là demo nên có thể public.</li>
-                      <li>Dữ liệu trong database là demo nên mình xin public được.</li>
-                    </ul>
-                    <a target='_blank' href="https://youtu.be/wMU5zgRMcO8?t=17" className="btn btn-danger me-3">Demo Video</a>
-                    <a target='_blank' href="https://github.com/black134614/OanhVinhWebFull" className="btn btn-warning">Soure code</a>
-                  </div>
-                </div>
-              </div>
+
             </div>
           </div>
         </section>
