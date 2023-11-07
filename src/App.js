@@ -8,6 +8,7 @@ import HomeTemplate from './templates/HomeTemplate'
 import Home from './Pages/Home'
 import Loadding from './components/Loadding/Loadding'
 import ReactTooltip from 'react-tooltip';
+import { Analytics } from '@vercel/analytics/react';
 
 export const history = createBrowserHistory({ window });
 
@@ -21,6 +22,7 @@ function App() {
           <Route index path='' element={<Home />}></Route>
         </Route>
       </Routes>
+      <Analytics />
     </HistoryRouter>
   );
 }
