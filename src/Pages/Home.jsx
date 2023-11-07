@@ -181,10 +181,22 @@ export default function Home(props) {
         <section id="activities" className="resume">
           <div className="container">
             <div className="section-title" data-aos="fade-up">
-              <h2>Học Thêm - Thực Chiến</h2>
+              <h2>Quá Trình Học Tập</h2>
             </div>
             <div className="row">
-              <div className="col-lg-6" data-aos="fade-up">
+            <div className="col-lg-6" data-aos="fade-up">
+            <h3 className="resume-title">2015 - 2019</h3>
+            <div className="resume-item pb-0">
+              <h4>Học Đại Học</h4>
+              <p>
+                <em>Chuyên nghành CNTT</em>
+              </p>
+              <ul>
+                <li>Học Đại Học Tại Trường Kinh Tế - Kỹ Thuật Bình Dương.</li>
+              </ul>
+            </div>
+          </div>
+              <div className="col-lg-6" data-aos="fade-up" data-aos-delay={500}>
                 <h3 className="resume-title">2018 - 2019</h3>
                 <div className="resume-item pb-0">
                   <h4>Học offline</h4>
@@ -198,7 +210,7 @@ export default function Home(props) {
                   </ul>
                 </div>
               </div>
-              <div className="col-lg-6" data-aos="fade-up" data-aos-delay={500}>
+              <div className="col-lg-6" data-aos="fade-up" data-aos-delay={1000}>
                 <h3 className="resume-title">2021 - 2022</h3>
                 <div className="resume-item">
                   <h4>Học online</h4>
