@@ -87,7 +87,7 @@ export default function Home(props) {
                 data-aos="fade-left"
                 data-aos-delay="500"
               >
-                <h3>Designer &amp; Web Developer.</h3>
+                <h3>Web Developer</h3>
 
                 <div className="row mt-5">
                   <div className="col-lg-6">
@@ -181,7 +181,7 @@ export default function Home(props) {
         <section id="activities" className="resume">
           <div className="container">
             <div className="section-title" data-aos="fade-up">
-              <h2>Quá trình học tập</h2>
+              <h2>Học Thêm - Thực Chiến</h2>
             </div>
             <div className="row">
               <div className="col-lg-6" data-aos="fade-up">
