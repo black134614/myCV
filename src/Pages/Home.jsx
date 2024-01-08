@@ -112,7 +112,7 @@ export default function Home(props) {
                         <i className="bi bi-chevron-right" />{" "}
                         <strong>Số điện thoại:</strong>
                         <a href="tel:+84354624774">
-                          <span>035.462.4774</span>
+                          <span>0785.881.375</span>
                         </a>
                       </li>
                       <li>
@@ -718,10 +718,10 @@ export default function Home(props) {
                   <div className="phone">
                     <i className="bi bi-phone" />
                     <h4>Số điện thoại:</h4>
-                    <p>035.462.4774</p>
+                    <p>0785.881.375</p>
                   </div>
                   <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3916.698503612047!2d106.71240703392533!3d10.986114446982873!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3174d0984c869eb9%3A0xd2e9895d479a5803!2zQsOsbmggQ2h14bqpbiAxNywgQsOsbmggQ2h14bqpbiwgVGh14bqtbiBBbiwgQsOsbmggRMawxqFuZw!5e0!3m2!1sen!2s!4v1657315159925!5m2!1sen!2s"
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2632.2042954098565!2d106.72376426037684!3d10.960953402456125!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1704677372922!5m2!1sen!2s"
                     frameBorder={0}
                     style={{ border: 0, width: "100%", height: 290 }}
                     allowFullScreen
