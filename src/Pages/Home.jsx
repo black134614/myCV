@@ -55,22 +55,10 @@ export default function Home(props) {
                 Chào nhà tuyển dụng! Mình là Luân đến từ Tây Ninh, hiện tại mình
                 đang sống và làm việc tại Bình Dương.
                 <br />
-                Trước 2022, mình là nhân viên văn phòng bình thường, sau khi học
-                qua 6 khóa lập trình từ cơ bản đến nâng cao '
-                <strong>Có Cấp Bằng</strong>'. Mình có thể lập trình Website
-                ,.Net, Java, Python,... sử dụng nhiều phần mềm chỉ cần đọc, tra
-                cứu tài liệu.
-                <br />
                 Ngoài kĩ năng lập trình được dạy, mình còn tự học thêm các kiến
                 thức đáp ứng cho công ty như: lập trình tự động Excel, SAP, Tool
                 tự động google chrome, Sử dụng được API chatGPT để tích hợp vào
                 ứng dụng, code ra các chức năng tiện ích,....
-                <br />
-                Khoảng nửa năm gần đây, mình có nghiên cứu các thuật toán của
-                google - facebook, setup Fanpage, setup Profile Facebook, lập
-                trình Python để lấy dữ liệu, học phân tích từ khóa, và cho ra
-                các module nhỏ để giảm bớt công việc Marketing Social thao tác
-                tay.
               </p>
             </div>
             <div className="row">
