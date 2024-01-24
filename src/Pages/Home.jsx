@@ -204,8 +204,7 @@ export default function Home(props) {
                   <h4>Học online</h4>
                   <p>
                     <em>
-                      Hoàn thành lộ trình 3 khóa của CyberSoft - đợi cấp chứng
-                      chỉ
+                      Hoàn thành lộ trình 3 khóa của CyberSoft
                     </em>
                   </p>
                   <ul>
